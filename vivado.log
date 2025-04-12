@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sat Apr 12 11:34:09 2025
+# Process ID         : 14924
+# Current directory  : E:/Users/Alberto/Practica-3A_Fiables-main
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent18836 E:\Users\Alberto\Practica-3A_Fiables-main\contador_redundante.xpr
+# Log file           : E:/Users/Alberto/Practica-3A_Fiables-main/vivado.log
+# Journal file       : E:/Users/Alberto/Practica-3A_Fiables-main\vivado.jou
+# Running On         : DESKTOP-UE24NJF
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 19045
+# Processor Detail   : Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz
+# CPU Frequency      : 2808 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 17093 MB
+# Swap memory        : 1073 MB
+# Total Virtual      : 18167 MB
+# Available Virtual  : 8780 MB
+#-----------------------------------------------------------
+start_gui
+open_project E:/Users/Alberto/Practica-3A_Fiables-main/contador_redundante.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'E:/Users/Alberto/Practica-3A_Fiables-main/contador_redundante.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilin/Vivado/2024.2/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1133.516 ; gain = 81.078
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 12 11:37:42 2025...
