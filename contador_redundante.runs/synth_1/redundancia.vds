@@ -1,0 +1,265 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri Apr 11 19:43:34 2025
+# Process ID         : 21208
+# Current directory  : E:/Users/Alberto/Practica-3A_Fiables-main/contador_redundante.runs/synth_1
+# Command line       : vivado.exe -log redundancia.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source redundancia.tcl
+# Log file           : E:/Users/Alberto/Practica-3A_Fiables-main/contador_redundante.runs/synth_1/redundancia.vds
+# Journal file       : E:/Users/Alberto/Practica-3A_Fiables-main/contador_redundante.runs/synth_1\vivado.jou
+# Running On         : DESKTOP-UE24NJF
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 19045
+# Processor Detail   : Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz
+# CPU Frequency      : 2808 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 17093 MB
+# Swap memory        : 1073 MB
+# Total Virtual      : 18167 MB
+# Available Virtual  : 6920 MB
+#-----------------------------------------------------------
+source redundancia.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental E:/Users/Alberto/Practica-3A_Fiables-main/contador_redundante.srcs/utils_1/imports/synth_1/redundancia.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from E:/Users/Alberto/Practica-3A_Fiables-main/contador_redundante.srcs/utils_1/imports/synth_1/redundancia.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top redundancia -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4152
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 987.809 ; gain = 470.184
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'redundancia' [E:/Users/Alberto/Practica-3A_Fiables-main/contador_redundante.srcs/sources_1/new/redundancia.vhd:18]
+	Parameter SIMULATION_MODE bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'clk_divider' declared at 'E:/Users/Alberto/Practica-3A_Fiables-main/contador_redundante.srcs/sources_1/new/clk_divider.vhd:25' bound to instance 'DIV' of component 'clk_divider' [E:/Users/Alberto/Practica-3A_Fiables-main/contador_redundante.srcs/sources_1/new/redundancia.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'clk_divider' [E:/Users/Alberto/Practica-3A_Fiables-main/contador_redundante.srcs/sources_1/new/clk_divider.vhd:32]
+	Parameter SIMULATION_MODE bound to: 0 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'clk_divider' (0#1) [E:/Users/Alberto/Practica-3A_Fiables-main/contador_redundante.srcs/sources_1/new/clk_divider.vhd:32]
+INFO: [Synth 8-3491] module 'contador1' declared at 'E:/Users/Alberto/Practica-3A_Fiables-main/contador_redundante.srcs/sources_1/new/contador1.vhd:14' bound to instance 'U1' of component 'contador1' [E:/Users/Alberto/Practica-3A_Fiables-main/contador_redundante.srcs/sources_1/new/redundancia.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'contador1' [E:/Users/Alberto/Practica-3A_Fiables-main/contador_redundante.srcs/sources_1/new/contador1.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'contador1' (0#1) [E:/Users/Alberto/Practica-3A_Fiables-main/contador_redundante.srcs/sources_1/new/contador1.vhd:20]
+INFO: [Synth 8-3491] module 'contador2' declared at 'E:/Users/Alberto/Practica-3A_Fiables-main/contador_redundante.srcs/sources_1/new/contador2.vhd:14' bound to instance 'U2' of component 'contador2' [E:/Users/Alberto/Practica-3A_Fiables-main/contador_redundante.srcs/sources_1/new/redundancia.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'contador2' [E:/Users/Alberto/Practica-3A_Fiables-main/contador_redundante.srcs/sources_1/new/contador2.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'contador2' (0#1) [E:/Users/Alberto/Practica-3A_Fiables-main/contador_redundante.srcs/sources_1/new/contador2.vhd:20]
+INFO: [Synth 8-3491] module 'display_controller' declared at 'E:/Users/Alberto/Practica-3A_Fiables-main/contador_redundante.srcs/sources_1/new/display_controller.vhd:25' bound to instance 'DISP' of component 'display_controller' [E:/Users/Alberto/Practica-3A_Fiables-main/contador_redundante.srcs/sources_1/new/redundancia.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'display_controller' [E:/Users/Alberto/Practica-3A_Fiables-main/contador_redundante.srcs/sources_1/new/display_controller.vhd:35]
+INFO: [Synth 8-3491] module 'seven_decoder' declared at 'E:/Users/Alberto/Practica-3A_Fiables-main/contador_redundante.srcs/sources_1/new/seven_decoder.vhd:24' bound to instance 'U_DECODER' of component 'seven_decoder' [E:/Users/Alberto/Practica-3A_Fiables-main/contador_redundante.srcs/sources_1/new/display_controller.vhd:80]
+INFO: [Synth 8-638] synthesizing module 'seven_decoder' [E:/Users/Alberto/Practica-3A_Fiables-main/contador_redundante.srcs/sources_1/new/seven_decoder.vhd:31]
+INFO: [Synth 8-226] default block is never used [E:/Users/Alberto/Practica-3A_Fiables-main/contador_redundante.srcs/sources_1/new/seven_decoder.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'seven_decoder' (0#1) [E:/Users/Alberto/Practica-3A_Fiables-main/contador_redundante.srcs/sources_1/new/seven_decoder.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'display_controller' (0#1) [E:/Users/Alberto/Practica-3A_Fiables-main/contador_redundante.srcs/sources_1/new/display_controller.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'redundancia' (0#1) [E:/Users/Alberto/Practica-3A_Fiables-main/contador_redundante.srcs/sources_1/new/redundancia.vhd:18]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1092.426 ; gain = 574.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1092.426 ; gain = 574.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1092.426 ; gain = 574.801
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1092.426 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/Users/Alberto/Practica-3A_Fiables-main/contador_redundante.srcs/constrs_1/new/Nexys-A7-100T-Master.xdc]
+Finished Parsing XDC File [E:/Users/Alberto/Practica-3A_Fiables-main/contador_redundante.srcs/constrs_1/new/Nexys-A7-100T-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Users/Alberto/Practica-3A_Fiables-main/contador_redundante.srcs/constrs_1/new/Nexys-A7-100T-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/redundancia_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/redundancia_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1171.055 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1171.055 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1171.055 ; gain = 653.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1171.055 ; gain = 653.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1171.055 ; gain = 653.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1171.055 ; gain = 653.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   26 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 2     
++---Registers : 
+	               26 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    8 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design redundancia has port AN[7] driven by constant 1
+WARNING: [Synth 8-3917] design redundancia has port AN[6] driven by constant 1
+WARNING: [Synth 8-3917] design redundancia has port AN[5] driven by constant 1
+WARNING: [Synth 8-3917] design redundancia has port AN[4] driven by constant 1
+WARNING: [Synth 8-3917] design redundancia has port AN[3] driven by constant 1
+WARNING: [Synth 8-3917] design redundancia has port AN[2] driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1171.055 ; gain = 653.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1288.629 ; gain = 771.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1309.902 ; gain = 792.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1309.902 ; gain = 792.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1515.672 ; gain = 998.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1515.672 ; gain = 998.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1515.672 ; gain = 998.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1515.672 ; gain = 998.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1515.672 ; gain = 998.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1515.672 ; gain = 998.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    12|
+|3     |LUT1   |     5|
+|4     |LUT2   |    28|
+|5     |LUT3   |     4|
+|6     |LUT4   |    13|
+|7     |LUT5   |     5|
+|8     |LUT6   |     4|
+|9     |FDCE   |    55|
+|10    |IBUF   |     3|
+|11    |OBUF   |    25|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1515.672 ; gain = 998.047
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:35 . Memory (MB): peak = 1515.672 ; gain = 919.418
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1515.672 ; gain = 998.047
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1524.852 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1528.582 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: c1dd0fab
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 1528.582 ; gain = 1216.281
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1528.582 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/Users/Alberto/Practica-3A_Fiables-main/contador_redundante.runs/synth_1/redundancia.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file redundancia_utilization_synth.rpt -pb redundancia_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 11 19:44:23 2025...
